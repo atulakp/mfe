@@ -21,7 +21,7 @@ function App(props) {
   const [isSignedIn, setIsSignedIn] = useState(false);
   return (
     <BrowserRouter>
-      <StylesProvider createGenerateClassName={generateClassName}>
+      <StylesProvider generateClassName={generateClassName}>
         <div>
           <Header
             onSignOut={() => setIsSignedIn(false)}
